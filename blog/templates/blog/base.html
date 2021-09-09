@@ -12,10 +12,17 @@
         <header class="page-header">
             <div class="container">
                 {% if user.is_authenticated %}
+                    <p class="top-menu-welcome">
+                        Welcome {{ user.username }}!<a href="{% url 'logout' %} " class="top-menu"><span class="glyphicon glyphicon-log-out"></span></a>
+                    </p>
                     <a href="{% url 'post_new' %}" class="top-menu">
                         <span class="glyphicon glyphicon-plus"></span>
                     </a>
-                    <a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit"></span></a>
+                    <a href="{% url 'post_draft_list' %}" class="top-menu">
+                        <span class="glyphicon glyphicon-edit"></span>
+                    </a>
+                {% else %}
+                    <a href="{% url 'login' %}" class="top-menu"><span class="glyphicon glyphicon-lock"></span></a>
                 {% endif %}
                 <h1><a href="/">FIRST DJANGO GIRLS</a></h1>
                 
