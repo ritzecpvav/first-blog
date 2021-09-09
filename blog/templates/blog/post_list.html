@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>First Django Blog</title>
+</head>
 
-    <head>
-        <title>First Django Blog</title>
-    </head>
-
-    <body>
-        <header>
-            <h1><a href="/">FIRST DJANGO BLOG</a></h1>
-        </header>
-
-        {% for post in posts %}
-        <article>
-            <time>published: {{ post.published_date }}</time>
+<body>
+    <header>
+        <h1><a href="/">FIRST DJANGO BLOG</a></h1>
+    </header>
+        
+    {% for post in posts %}
+    <article>
+        <time>published: {{ post.published_date }}</time>
             <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
-        </article>
-        {% endfor %}
-
-    </body>
-
+    </article>
+    {% endfor %}
+</body>
 </html>
