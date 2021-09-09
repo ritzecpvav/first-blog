@@ -43,20 +43,32 @@ h4 {
   margin-right: 20px;
 }
 
+.top-menu:hover {
+  border-bottom: solid;
+  border-color: white;
+}
+
 .top-menu-welcome {
   color: #ffffff;
-  font-size: 20pt;
+  font-size: 16pt;
   float: right;
   margin: 5px 5px 5px 5px;
 }
 
 .post {
   margin-bottom: 70px;
+  background-color: #ffffff;
+  border-color: #292936;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 10pt;
+  border-style: solid;
+  padding: 30px 30px 30px 30px;
 }
 
 .post h2 a,
 .post h2 a:visited {
-  color: #000000;
+  color: #292936;
 }
 
 .post > .date,
@@ -76,4 +88,16 @@ h4 {
 .btn-default:hover {
   color: #ffffff;
   background-color: #292936;
+}
+
+body {
+  background-color: #aeb6bc;
+}
+
+main.container {
+  margin-bottom: 40px;
+}
+
+.comment {
+  margin: 20px 20px 20px 20px;
 }
