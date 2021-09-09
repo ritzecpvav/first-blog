@@ -58,7 +58,7 @@ DATABASES = {
         'NAME': 'djangogirls',
         'USER': 'ritzecpvav',
         'PASSWORD': '',
-        'HOST': '',
+        'HOST': 'localhost',
         'PORT': '',
     }
 }
