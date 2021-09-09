@@ -62,6 +62,8 @@ h4 {
   color: #292936;
   background: none;
   border-color: #292936;
+  float: right;
+  margin-right: 5px;
 }
 
 .btn-default:hover {
