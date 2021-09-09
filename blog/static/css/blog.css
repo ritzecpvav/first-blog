@@ -20,6 +20,7 @@ h2,
 h3,
 h4 {
   font-family: "Urbanist", sans-serif;
+  color: #292936;
 }
 
 .date {
@@ -101,4 +102,8 @@ main.container {
 
 .comment {
   margin: 20px 20px 20px 20px;
+}
+
+.acomment {
+  color: #292936;
 }
